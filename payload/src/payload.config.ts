@@ -10,6 +10,8 @@ import Users from "./collections/Users";
 import { Posts } from "./collections/Posts";
 import { Courses } from "./collections/Courses";
 import { Pages } from "./collections/Pages";
+import { Menus } from "./collections/Menus";
+import { Media } from "./collections/media";
 
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_EXTERNAL_SERVER_URL,
@@ -24,7 +26,7 @@ export default buildConfig({
     ? process.env.WHITELIST_ORIGINS.split(",")
     : [],
   editor: slateEditor({}),
-  collections: [Users, Posts, Courses, Pages],
+  collections: [Users, Posts, Courses, Pages, Menus, Media],
   typescript: {
     outputFile: path.resolve(__dirname, "payload-types.ts"),
   },

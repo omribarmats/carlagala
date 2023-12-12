@@ -38,7 +38,13 @@ export const SEOgroup: Field = {
       minLength: 40,
       maxLength: 160,
     },
-
+    {
+      name: "image",
+      label: "Featured image",
+      type: "upload",
+      relationTo: "media",
+      required: false,
+    },
     {
       name: "keywords",
       label: "SEO Keywords",
