@@ -1,5 +1,5 @@
 import { CollectionConfig } from "payload/types";
-import { anyone } from "../../access/anyone";
+import { anyone } from "../access/anyone";
 
 export const Menus: CollectionConfig = {
   slug: "menus",

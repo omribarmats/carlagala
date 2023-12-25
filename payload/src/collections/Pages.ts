@@ -1,6 +1,6 @@
 import { CollectionConfig } from "payload/types";
 import { SEOgroup } from "./componennts/SEO";
-import { anyone } from "../../access/anyone";
+import { anyone } from "../access/anyone";
 import {
   HTMLConverterFeature,
   lexicalEditor,

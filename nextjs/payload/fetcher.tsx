@@ -11,8 +11,7 @@ const checkStatus = (response: Response) => {
 
 export async function fetchData<T>(
   query: string,
-  method: string,
-  slug?: string
+  method: string
 ): Promise<T | null> {
   const headers = {
     "Content-Type": "application/json",

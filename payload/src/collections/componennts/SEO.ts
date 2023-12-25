@@ -19,8 +19,8 @@ export const SEOgroup: Field = {
       label: "SEO title",
       type: "text",
       required: false,
-      minLength: 20,
-      maxLength: 100,
+      minLength: 5,
+      maxLength: 60,
     },
     {
       name: "description",

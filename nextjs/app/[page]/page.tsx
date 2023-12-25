@@ -42,14 +42,16 @@ async function getData(pageSlug: string): Promise<pageRes | null> {
 }
 
 export default async function Page({ params }: Props) {
-  const data = await getData(params.page);
+  // const result = await payload.find({
+  //   collection: "posts", // required
+  // });
 
-  console.log("dataPage: ", data);
+  const data = await getData(params.page);
 
   const page = data?.data.Pages.docs[0];
   const pageTitle = page?.title;
   const pageContent = page?.content_html;
-  console.log(pageContent);
+
   return (
     <div className="">
       <h1>{pageTitle}</h1>
